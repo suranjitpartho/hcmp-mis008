@@ -202,7 +202,7 @@ regex==2021.8.3
 requests==2.27.1
 rope==0.22.0
 Rtree==0.9.7
-ruamel-yaml-conda==0.15.100
+ruamel-yaml-conda==0.15.80
 scikit-image==0.18.3
 scikit-learn==1.0.2
 scikit-learn-intelex==2021.20220215.153006
