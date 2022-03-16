@@ -203,16 +203,6 @@ snowballstemmer==2.2.0
 sortedcollections==2.1.0
 sortedcontainers==2.4.0
 soupsieve==2.3.1
-Sphinx==4.4.0
-sphinxcontrib-applehelp==1.0.2
-sphinxcontrib-devhelp==1.0.2
-sphinxcontrib-htmlhelp==2.0.0
-sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-qthelp==1.0.3
-sphinxcontrib-serializinghtml==1.1.5
-sphinxcontrib-websupport==1.2.4
-spyder==5.1.5
-spyder-kernels==2.1.3
 SQLAlchemy==1.4.27
 sqlparse==0.4.1
 stack-data==0.2.0
