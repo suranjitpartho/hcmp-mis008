@@ -171,7 +171,6 @@ pyerfa==2.0.0
 pyflakes==2.3.1
 Pygments==2.11.2
 pylint==2.9.6
-pyls-spyder==0.4.0
 PyNaCl==1.4.0
 pyodbc==4.0.32
 pyOpenSSL==22.0.0
@@ -181,9 +180,7 @@ pyrsistent==0.18.0
 PySocks==1.7.1
 pytest==6.2.5
 python-dateutil==2.8.2
-python-lsp-black==1.0.0
 python-lsp-jsonrpc==1.0.0
-python-lsp-server==1.2.3
 python-slugify==5.0.2
 pytz==2021.3
 PyWavelets==1.1.1
