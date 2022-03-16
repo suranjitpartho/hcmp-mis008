@@ -165,6 +165,7 @@ psycopg2==2.8.6
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py==1.11.0
+pycodestyle==2.7.0
 pycodestyle==2.8.0
 pycosat==0.6.3
 pycparser==2.21
