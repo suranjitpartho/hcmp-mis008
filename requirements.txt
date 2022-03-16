@@ -61,7 +61,6 @@ et-xmlfile==1.1.0
 executing==0.8.3
 fastcache==1.1.0
 filelock==3.6.0
-flake8==3.9.2
 Flask==1.1.2
 fonttools==4.25.0
 fsspec==2022.2.0
@@ -165,6 +164,7 @@ psycopg2==2.8.6
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py==1.11.0
+pycodestyle==2.8.0
 pycosat==0.6.3
 pycparser==2.21
 pycurl==7.44.1
