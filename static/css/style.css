@@ -4,6 +4,7 @@
 }
 
 .nav-side-menu {
+    color: #b2bbcf;
     overflow: auto;
     font-family: Montserrat;
     font-style: normal;
@@ -14,7 +15,6 @@
     top: 0px;
     width: 17%;
     height: 100%;
-    color: #b2bbcf;
   }
 
   .nav-top-menu {
@@ -41,12 +41,11 @@
     font-weight: 600;
     padding: 3%;
     padding-left: 10%;
-    padding-top: 2%;
+    padding-top: 3%;
     border-bottom: 1px solid #23282e;
   }
 
   .nav-top-menu .brand {
-    background-color: #2F394F;
     height: 7%;
     display: position;
     text-align: right;
@@ -63,6 +62,7 @@
 
   .nav-side-menu ul,
   .nav-side-menu li {
+    color: #b2bbcf;
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -71,12 +71,14 @@
   }
 
   .nav-side-menu li {
-    padding-left: 10px;
+    padding-left: 15px;
+    color: #b2bbcf;
     border-left: 3px solid #2e353d;
     border-bottom: 1px solid #23282e;
   }
   .nav-side-menu li:hover {
     border-left: 3px solid #30a192;
+    color: #30a192;
     background-color: #354058;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -89,7 +91,7 @@
   .nav-side-menu li .sub-menu li {
     background-color: #2a3347;
     border: none;
-    line-height: 26px;
+    line-height: 24px;
     font-size: 13px;
     border-bottom: 1px solid #23282e;
     margin-left: 0px;
@@ -137,7 +139,7 @@
   .nav-side-menu ul .sub-menu li:before,
   .nav-side-menu li .sub-menu li:before {
     font-family: Fontawesome;
-    content: "\f105";
+    content: "\f138";
     display: inline-block;
     padding-left: 20px;
     padding-right: 10px;
@@ -149,13 +151,14 @@
     color: #b2bbcf;
   }
 
-
   .nav-side-menu li a i {
-    padding-left: 10px;
+    padding-left: 5px;
     width: 15px;
-    padding-right: 30px;
+    padding-right: 20px;
     font-size: 15px;
   }
+
+  
  
 
   @media (max-width: 767px) {

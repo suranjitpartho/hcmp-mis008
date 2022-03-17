@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCMP-MIS</title>
+    <title>HCMP-MEAL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href= {% static 'css/style.css' %}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,21 +20,19 @@
 
 <div class='wrapper'>
     <div class='nav-side-menu'>
-        <div class='brand'><img src="{%static 'image/logo2.png' %}" length=40% width=50% alt=""></div>
+        <div class='brand'><img src="{%static 'image/logo2.png' %}" length=47% width=47% alt=""></div>
         <div class='menu-list'>
             <ul id="menu-content" class="menu-content collapse out">
-                <li><a href="{% url 'App_Dash:tva' %}"><i class="fa-solid fa-house-user"></i>Target vs Achievement</a></li>
+                <li><a href="{% url 'App_Dash:tva' %}"><i class="fa-solid fa-arrow-up-right-from-square"></i>Target vs Achievement</a></li>
                 
-                <li data-toggle="collapse" data-target="#health" class="collapsed">
-                    <a href="#"><i class="fa-solid fa-chart-line"></i>Health</a>
-                </li>
+                <li data-toggle="collapse" data-target="#health" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Health</a></li>
                 <ul class="sub-menu collapse" id="health">
                     <li><a href="{% url 'App_Dash:health' %}">Health</a></li>
-                    <li><a href="{% url 'App_Dash:nutrition' %}">Nutrition</li>
+                    <li><a href="{% url 'App_Dash:nutrition' %}">Nutrition</a></li>
                 </ul>
 
                 <li data-toggle="collapse" data-target="#shelter" class="collapsed">
-                    <a href="#"><i class="fa-solid fa-chart-line"></i>Shelter</a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i>Shelter</a>
                 </li>
                 <ul class="sub-menu collapse" id="shelter">
                     <li><a href="{% url 'App_Dash:shelter' %}">Shelter</a></li>
@@ -41,7 +40,7 @@
                 </ul>
 
                 <li data-toggle="collapse" data-target="#protection" class="collapsed">
-                    <a href="#"><i class="fa-solid fa-chart-line"></i>Protection</a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i>Protection</a>
                 </li>
                 <ul class="sub-menu collapse" id="protection">
                     <li><a href="{% url 'App_Dash:sgbv' %}">SGBV</a></li>
@@ -51,7 +50,7 @@
         </div>
     </div>
     <div class='nav-top-menu'>
-        <div class='brand'>HCMP MIS DASHBOARD</div>
+        <div class='brand'>HCMP MEAL DASHBOARD</div>
     </div>
 </div>
 

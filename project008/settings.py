@@ -20,7 +20,7 @@ SECRET_KEY = '8_#!e)ts2l_0isc778lb-#09p3b&pepozox(q+owyz^x&c*@=a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hcmp-mis008.herokuapp.com']
+ALLOWED_HOSTS = ['hcmp-mis008.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
