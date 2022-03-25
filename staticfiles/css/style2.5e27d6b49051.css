@@ -1,0 +1,32 @@
+.main-body{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #c6c6c7;
+    position: fixed;
+}
+
+.second-div{
+    padding: 5%;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+}
+
+.contentbox{
+    color: #b2bbcf;
+    background-color: #2F394F;
+    border-radius: 2%;
+    box-shadow: 10px 10px 12px #747373;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 13px;
+    padding:4%;
+    height: 100%;
+    width: 40%;
+}
+
+.btn-info.custom-btn{
+    background-color: #30a192;
+	border-color: #30a192;
+}
