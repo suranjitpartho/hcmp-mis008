@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block body_block %}
+    <div style="padding: 2%; height: 100%;">
+        <div style="background-color: #F4F4F4; outline: 1px solid #A0A0A0; padding:2%; height: 100%; width: 50%; overflow: scroll; border-top: 4px solid #2F394F;">
+
+            <h4>Logging Out</h4>
+            <p>Are you sure you want to log-out?</p>
+            <br>
+
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-danger btn-sm">Log Out</button>
+            </form>
+            <br>
+
+         
+        </div>
+    </div>
+{% endblock %}

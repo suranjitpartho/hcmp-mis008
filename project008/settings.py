@@ -20,7 +20,7 @@ SECRET_KEY = '8_#!e)ts2l_0isc778lb-#09p3b&pepozox(q+owyz^x&c*@=a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hcmp-mis008.herokuapp.com']
+ALLOWED_HOSTS = ['hcmp-mis008.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -32,7 +32,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    'crispy_forms',
+    
+    # Apps
     'App_Dash',
+    'accounts',
 ]
 
 
@@ -119,3 +129,40 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
+
+
+
+
+# Custom User Model:
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+
+
+# Login/Logout User Auth:
+LOGIN_REDIRECT_URL = '/dashboard/health/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+
+
+# Django AllAuth Configuration Options:
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    "django.contrib.auth.backends.ModelBackend",
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
+
+
+SITE_ID = 1
+
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = True
+ACCOUNT_SESSION_REMEMBER = True
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = True
