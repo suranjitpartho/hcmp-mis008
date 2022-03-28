@@ -32,6 +32,7 @@ comtypes==1.1.10
 conda==4.3.16
 conda-pack==0.6.0
 contextlib2==0.6.0.post1
+django-crispy-forms==1.6.0
 Cython==0.29.25
 cytoolz==0.11.0
 debugpy==1.5.1
