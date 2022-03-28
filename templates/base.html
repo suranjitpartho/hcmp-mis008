@@ -8,6 +8,7 @@
     <title>HCMP-MIS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href= {% static 'css/style.css' %}>
+    <link rel="stylesheet" type="text/css" href= {% static 'css/style2.css' %}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -35,7 +36,8 @@
 
 
 
-                <li><a href="{% url 'App_Dash:tva' %}"><i class="fa-regular fa-circle-play"></i>Monthly Data</a></li>
+                <li><a href="{% url 'App_Dash:monthlydata' %}"><i class="fa-regular fa-circle-play"></i>Monthly Data</a></li>
+                <li><a href="{% url 'App_Dash:servicemapping' %}"><i class="fa-regular fa-circle-play"></i>Service Map</a></li>
                 
                 <li data-toggle="collapse" data-target="#health" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Health</a></li>
                 <ul class="sub-menu collapse" id="health">

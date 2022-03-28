@@ -13,9 +13,16 @@ def home(request):
     return render(request, 'home.html', context=dict)
 
 @login_required
-def tva(request):
+def monthlydata(request):
     dict = {}
-    return render(request, 'App_Dash/tva.html', context=dict)
+    return render(request, 'App_Dash/monthlydata.html', context=dict)
+
+
+@login_required
+def servicemapping(request):
+    dict = {}
+    return render(request, 'App_Dash/servicemapping.html', context=dict)
+
 
 @login_required
 def health(request):

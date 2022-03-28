@@ -3,7 +3,6 @@ import os
 # Paths:
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
@@ -129,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
@@ -139,7 +139,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 
 # Login/Logout User Auth:
-LOGIN_REDIRECT_URL = '/dashboard/health/'
+LOGIN_REDIRECT_URL = '/dashboard/'
 ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 

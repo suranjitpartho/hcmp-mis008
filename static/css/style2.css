@@ -16,8 +16,8 @@
 .contentbox{
     color: #b2bbcf;
     background-color: #2F394F;
-    border-radius: 2%;
-    box-shadow: 10px 10px 12px #747373;
+    border-radius: 1.5%;
+    box-shadow: 10px 10px 12px #838383;
     font-family: Montserrat;
     font-style: normal;
     font-size: 13px;
@@ -26,7 +26,18 @@
     width: 40%;
 }
 
+
+
+
 .btn-info.custom-btn{
     background-color: #30a192;
 	border-color: #30a192;
+}
+
+.btn-info.custom-btn:hover{
+    background-color: #44b8a8;
+}
+
+.btn-info.custom-btn:active:focus{
+    background-color: #30a192;
 }
