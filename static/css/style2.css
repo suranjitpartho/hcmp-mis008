@@ -2,7 +2,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #c6c6c7;
+    background-color: #636363;
     position: fixed;
 }
 
@@ -14,10 +14,10 @@
 }
 
 .contentbox{
-    color: #b2bbcf;
-    background-color: #2F394F;
+    color: #3b3b3b;
+    background-color: #fcfcfc;
     border-radius: 1.5%;
-    box-shadow: 10px 10px 12px #838383;
+    box-shadow: 10px 10px 12px #575757;
     font-family: Montserrat;
     font-style: normal;
     font-size: 13px;
@@ -30,14 +30,14 @@
 
 
 .btn-info.custom-btn{
-    background-color: #30a192;
-	border-color: #30a192;
+    background-color: #D10073;
+	border-color: #D10073;
 }
 
 .btn-info.custom-btn:hover{
-    background-color: #44b8a8;
+    background-color: #dd278b;
 }
 
 .btn-info.custom-btn:active:focus{
-    background-color: #30a192;
+    background-color: #D10073;
 }
