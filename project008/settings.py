@@ -147,13 +147,13 @@ ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
 # EMAIL SETTINGS:
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'suranjitpartho@gmail.com'
-EMAIL_HOST_PASSWORD = 'youoweme##1993'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = 'suranjitpartho@gmail.com'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
 AUTHENTICATION_BACKENDS = (
