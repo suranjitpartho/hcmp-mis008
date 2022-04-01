@@ -2,30 +2,40 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #636363;
+    background-color: #5a6074;
     position: fixed;
 }
 
 .second-div{
-    padding: 5%;
+    padding: 6%;
     height: 100%;
     width: 80%;
     align-items: center;
+    transform: translateX(14%);
 }
 
 .contentbox{
     color: #3b3b3b;
     background-color: #fcfcfc;
     border-radius: 1.5%;
-    box-shadow: 10px 10px 12px #575757;
+    box-shadow: 10px 10px 12px #424242;
     font-family: Montserrat;
     font-style: normal;
     font-size: 13px;
-    padding:4%;
+    padding: 4%;
     height: 100%;
     width: 40%;
+    align-items: center;
+    overflow: auto;
 }
 
+.logo-content{
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
 
 

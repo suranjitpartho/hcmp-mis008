@@ -19,18 +19,33 @@
   }
 
   .nav-top-menu {
-    overflow: auto;
+    overflow: hidden;
     font-family: Montserrat;
     font-style: normal;
-    font-size: 12px;
-    font-weight: 475;
-    background-color: #f1f1f1;
+    font-size: 1.2vw;
+    font-weight: 500;
+    background-color: #4e5468;
     position: absolute;
-    top: 0px;
     width: 83%;
-    height: 7%;
-    color: #3b3b3b;
+    height: 5%;
+    color: #dcdada;
     margin-left: 17%;
+    text-align: right;
+    padding-right: 3%;
+  }
+
+  .top-content{
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+
+  }
+
+
+  .brand2{
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 6%;
+    padding-left: 5%;
     border-bottom: 1px solid #c2c2c2;
   }
 
@@ -46,16 +61,6 @@
     border-bottom: 1px solid #c2c2c2;
   }
 
-  .nav-top-menu .brand {
-    height: 7%;
-    display: position;
-    text-align: right;
-    font-size: 19px;
-    padding: 0%;  
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
 
 .toggle-btn {
     display: none;
@@ -372,12 +377,12 @@
 }
 
 .main{
-  background-color: #b6b5b5;
+  background-color: #5a6074;
   color: rgb(38, 50, 75);
   position: absolute;
   font-size: 13px;
-  top: 7%;
+  top: 5%;
   width: 83%;
-  height: 93%;
+  height: 95%;
   margin-left: 17%;
 }

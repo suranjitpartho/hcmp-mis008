@@ -26,17 +26,8 @@
         </div>
         <div class='contentbox col-sm-5'>
 
-            <h4>LOGIN</h4>
-            <p>Please Login With Your Valid Credentials</p>
-            <br>
-
-            <form action="" method="POST">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <button type="submit" class="btn btn-info custom-btn btn-sm">Log In</button>
-            </form>
-            <br>
-            <a href="{% url 'account_signup' %}" style="color: #b2bbcf;">Don't Have an Account?</a> <br>        
+            <h4>VERIFY YOUR ID</h4>
+            <p>We've sent a verification link to your given email address. Please check and click on the given link to verify your id.</p>
 
         </div>
     </div>

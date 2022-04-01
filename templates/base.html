@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+{% load account %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,10 @@
 
 <div class='wrapper'>
     <div class='nav-side-menu'>
-        <div class='brand'><img src="{%static 'image/BRAC_Logo.png' %}" length=47% width=47% alt=""></div>
+        <div class='brand2'>
+            <img src="{%static 'image/BRAC_Logo.png' %}" length=45% width=45% alt="">
+            <p>Humanitarian Crisis Management Programme (HCMP)</p>
+        </div>
         <div class='menu-list'>
             <ul id="menu-content" class="menu-content collapse out">
 
@@ -67,7 +72,7 @@
         </div>
     </div>
     <div class='nav-top-menu'>
-        <div class='brand'>HCMP MIS DASHBOARD</div>
+        <div class='top-content'>HCMP MIS DASHBOARD</div>
     </div>
 </div>
 

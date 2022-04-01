@@ -1,5 +1,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
+{% load i18n %}
+{% load account %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,17 +28,14 @@
         </div>
         <div class='contentbox col-sm-5'>
 
-            <h4>LOGIN</h4>
-            <p>Please Login With Your Valid Credentials</p>
+            <h4>CONFIRM EMAIL</h4>
+            <p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is your verified e-mail address{% endblocktrans %}</p>
             <br>
-
+            
             <form action="" method="POST">
                 {% csrf_token %}
-                {{ form|crispy }}
-                <button type="submit" class="btn btn-info custom-btn btn-sm">Log In</button>
-            </form>
-            <br>
-            <a href="{% url 'account_signup' %}" style="color: #b2bbcf;">Don't Have an Account?</a> <br>        
+                <button type="submit" class="btn btn-info custom-btn btn-sm">Confirm</button>
+            </form> 
 
         </div>
     </div>
@@ -47,3 +46,10 @@
     
 </body>
 </html>
+
+
+
+
+
+
+
