@@ -1,4 +1,5 @@
 import os
+import django_heroku
 
 # Paths:
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,7 +36,6 @@ INSTALLED_APPS = [
 
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
 
     'crispy_forms',
     
@@ -82,12 +82,31 @@ WSGI_APPLICATION = 'project008.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
+# SQLite (for local development)
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
+
+# PostgreSQL (for production)
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd6ighs47k0pjet',
+        'USER': 'qwkvktlyytkcxs',
+        'PASSWORD': '861f5be14453690a20950fd10c95b7ba24963c90128bc0a17444cdf3d8ddc65f',
+        'HOST': 'ec2-52-70-186-184.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+
+
+
 
 
 # Password validation
@@ -113,13 +132,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+TIME_ZONE = 'Asia/Dhaka'
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
@@ -130,6 +145,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+django_heroku.settings(locals())
 
 
 
