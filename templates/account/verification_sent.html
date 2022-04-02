@@ -9,6 +9,7 @@
     <title>HCMP-MIS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href= {% static 'css/style2.css' %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -27,11 +28,14 @@
         <div class='contentbox col-sm-5'>
 
             <h4>WAIT FOR APPROVAL</h4> <br>
-            <p>Your request has been sent to our admins. Please wait till your email id get verified.</p>
-            <p>Once your id is verified, you will be notified by email.</p>
-            <p>For further queries please email us to <a href="">mis.hcmp@brac.net</a></p>
+            <p>Your signup request is in process. Please wait till your email id get verified. Once your id is verified, you will be notified by email.</p>
+            <p>For any further queries please contact with us.</p>
+            <p><i class="fa-solid fa-envelope"></i>  hcmp.meal@brac.net
+                <br>
+                <i class="fa-solid fa-phone"></i>  01847455799
+            </p>
             <br>
-            <a href="{% url 'account_login' %}" class="btn btn-info custom-btn btn-sm">Okay</a>
+            <a href="{% url 'account_login' %}" class="btn btn-info custom-btn btn-sm">Thanks</a>
             
         </div>
     </div>
