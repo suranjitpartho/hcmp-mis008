@@ -6,7 +6,7 @@
 .nav-side-menu {
     color: #3b3b3b;
     overflow: auto;
-    font-family: Montserrat;
+    font-family: Segoe UI;
     font-style: normal;
     font-size: 14px;
     font-weight: 475;
@@ -19,7 +19,7 @@
 
   .nav-top-menu {
     overflow: hidden;
-    font-family: Montserrat;
+    font-family: Segoe UI;
     font-style: normal;
     font-size: 1.2vw;
     font-weight: 500;
