@@ -15,6 +15,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -52,16 +53,19 @@
                 <li><a href="{% url 'App_Dash:monthlydata' %}"><i class="fa-regular fa-circle-play"></i>Monthly Data</a></li>
                 <li><a href="{% url 'App_Dash:servicemapping' %}"><i class="fa-regular fa-circle-play"></i>Service Map</a></li>
                 
-                <li data-toggle="collapse" data-target="#4w" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>ISCG 4W</a></li>
-                <ul class="sub-menu collapse" id="4w">
-                    <li><a href="{% url 'App_Dash:wash4w' %}">WASH</a></li>
+
+
+
+                <li data-toggle="collapse" data-target="#wash" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>WASH</a></li>
+                <ul class="sub-menu collapse" id="wash">
+                    <li><a href="{% url 'App_Dash:wash4w' %}">ISCG 4W Report</a></li>
                 </ul>
 
 
 
 
 
-                <li data-toggle="collapse" data-target="#health" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Health</a></li>
+                <li data-toggle="collapse" data-target="#health" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Health & Nutrition</a></li>
                 <ul class="sub-menu collapse" id="health">
                     <li><a href="{% url 'App_Dash:health' %}">Health</a></li>
                     <li><a href="{% url 'App_Dash:nutrition' %}">Nutrition</a></li>
@@ -83,7 +87,15 @@
                 </ul>
 
 
-                
+
+                <li data-toggle="collapse" data-target="#education" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Education</a></li>
+                <li data-toggle="collapse" data-target="#livelihood" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Livelihood</a></li>
+                <li data-toggle="collapse" data-target="#gfa" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>GFA</a></li>
+                <li data-toggle="collapse" data-target="#sms" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Site Management</a></li>
+
+
+
+
 
             </ul>      
         </div>
