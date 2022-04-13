@@ -52,6 +52,15 @@
                 <li><a href="{% url 'App_Dash:monthlydata' %}"><i class="fa-regular fa-circle-play"></i>Monthly Data</a></li>
                 <li><a href="{% url 'App_Dash:servicemapping' %}"><i class="fa-regular fa-circle-play"></i>Service Map</a></li>
                 
+                <li data-toggle="collapse" data-target="#4w" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>ISCG 4W</a></li>
+                <ul class="sub-menu collapse" id="4w">
+                    <li><a href="{% url 'App_Dash:wash4w' %}">WASH</a></li>
+                </ul>
+
+
+
+
+
                 <li data-toggle="collapse" data-target="#health" class="collapsed"><a href="#"><i class="fa-regular fa-circle-play"></i>Health</a></li>
                 <ul class="sub-menu collapse" id="health">
                     <li><a href="{% url 'App_Dash:health' %}">Health</a></li>
@@ -79,7 +88,7 @@
             </ul>      
         </div>
     </div>
-    <div class='nav-top-menu'>
+    <div class='nav-bottom-menu'>
         <div class='top-content'>HCMP MIS DASHBOARD</div>
     </div>
 </div>

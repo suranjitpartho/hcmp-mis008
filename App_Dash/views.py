@@ -48,3 +48,8 @@ def shelter(request):
 def site_improvement(request):
     dict = {}
     return render(request, 'App_Dash/site_improvement.html', context=dict)
+
+@login_required
+def wash4w(request):
+    dict = {}
+    return render(request, 'App_Dash/4w_wash.html', context=dict)

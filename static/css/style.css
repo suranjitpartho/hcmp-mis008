@@ -17,20 +17,20 @@
     height: 100%;
   }
 
-  .nav-top-menu {
+  .nav-bottom-menu {
     overflow: hidden;
     font-family: Segoe UI;
     font-style: normal;
     font-size: 1.2vw;
     font-weight: 500;
-    background-color: #4e5468;
+    background-color: #4a4f61;
     position: absolute;
     width: 83%;
-    height: 6%;
-    color: #dcdada;
+    height: 10%;
+    color: #d6d6d6;
     margin-left: 17%;
-    text-align: right;
-    padding-right: 3%;
+    text-align: left;
+    padding-left: 2%;
     bottom: 0;
   }
 
@@ -79,11 +79,13 @@
   .nav-side-menu li {
     padding-left: 15px;
     color: #3b3b3b;
-    border-left: 3px solid #515152;
-    border-bottom: 1px solid #c2c2c2;
+    border-left: 3px solid #cfcdcd;
+    border-right: 3px solid #cfcdcd;
+    border-bottom: 1px solid #dedede;
   }
   .nav-side-menu li:hover {
     border-left: 3px solid #D10073;
+    border-right: 3px solid #D10073;
     color: #D10073;
     background-color: #f5f5f5;
     -webkit-transition: all 1s ease;
