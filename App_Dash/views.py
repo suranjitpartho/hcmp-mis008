@@ -53,3 +53,8 @@ def site_improvement(request):
 def wash4w(request):
     dict = {}
     return render(request, 'App_Dash/4w_wash.html', context=dict)
+
+@login_required
+def iscg4w(request):
+    dict = {}
+    return render(request, 'App_Dash/iscg4w.html', context=dict)
